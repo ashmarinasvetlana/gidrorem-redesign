@@ -8,6 +8,7 @@ h3
     margin: 0px
 body
     background-color: #EDEDED
+    overflow-x: hidden
 .button
     min-width: 159px
     height: 39px
@@ -35,7 +36,7 @@ form
     height: 608px
     background: #242424
 .form
-    width: 100%
+    width: 100vw
     min-height: 990px
     background: url("../img/contacts/form_img.jpg") no-repeat center right
     display: flex
@@ -86,6 +87,12 @@ form
             border: none
             outline: none
 @media (max-width: 768px)
+    form
+        width: 100vw
+        display: flex
+        flex-direction: column
+        align-content: center
+        justify-content: center
     .section
         padding-top: 60px
         padding-bottom: 60px
@@ -98,24 +105,15 @@ form
         background-size: 100%
         min-height: 650px
         justify-content: center
-@media (max-width: 480px)
     .feedback
-        width: 100%
+        width: 100vw
+@media (max-width: 480px)
     .section
         padding-top: 50px
         padding-bottom: 50px
         &__title
             font-size: 25px
             margin-bottom: 35px
-    form
-        width: 100%
-        padding: 70px
-        height: 608px
-        background: #242424
-        display: flex
-        flex-direction: column
-        align-items: center
-        justify-content: center
     .form
         &__input
             font-size: 15px
