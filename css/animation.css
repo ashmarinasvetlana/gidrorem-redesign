@@ -1,0 +1,13 @@
+@-webkit-keyframes slide {
+    from { background-position: right -80px top 76px; }
+    to { background-position: right top 76px; }
+}
+
+@-webkit-keyframes feature {
+    from { background-position: center right 15%; }
+    to { background-position: center right 25%; }
+}
+@-webkit-keyframes form {
+    from { background-position: center right -80px; }
+    to { background-position: center right; }
+}

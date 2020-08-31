@@ -1,0 +1,59 @@
+.hero
+    min-height: 100vh
+    background: url("../img/main_bg.jpg") no-repeat right top 76px
+    -webkit-animation: slide 0.8s linear 
+    &__title
+        +bold-cond
+        font-size: 120px
+        line-height: 110%
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        color: $text-color
+        margin-bottom: 30px
+        margin-top: 25px
+    &__subtitle
+        +text
+        margin-bottom: 50px
+    &__services
+        +text
+        margin-top: 105px
+@media (max-width: 1200px)
+    .hero
+        margin-top: 60px
+        background: url("../img/main_bg.jpg") no-repeat right top 76px
+        background-size: 50%
+        &__title
+            font-size: 100px
+        &__services
+            margin-top: 90px
+        &__subtitle
+            margin-bottom: 70px
+@media (max-width: 990px)
+    .hero
+        min-height: 60vh
+        margin-top: 60px
+        background: url("../img/main_bg.jpg") no-repeat right top 76px
+        background-size: 50%
+        -webkit-animation: none
+        &__title
+            font-size: 80px
+        &__services
+            display: none
+@media (max-width: 768px)
+    .hero
+        min-height: 70vh
+        margin-top: 0px
+        background: url(../img/main_bg.jpg) no-repeat right top 196px
+        background-size: 50%
+@media (max-width: 560px)
+    .hero
+        background: #EDEDED
+        &__title
+            font-size: 70px
+@media (max-width: 486px)
+    .hero
+        &__title
+            font-size: 60px
+            margin-bottom: 24px
+
+

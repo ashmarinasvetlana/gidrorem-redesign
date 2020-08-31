@@ -1,0 +1,3 @@
+User-agent: *
+Host: remontgidravliki.ru
+Sitemap: https://remontgidravliki.ru/sitemap.xml

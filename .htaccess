@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://remontgidravliki.ru [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.remontgidravliki\.ru$ [NC]
+RewriteRule ^(.*)$ https://remontgidravliki.ru/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^https://www.remontgidravliki\.ru$ [NC]
+RewriteRule ^(.*)$ https://remontgidravliki.ru/$1 [R=301,L]
+
+

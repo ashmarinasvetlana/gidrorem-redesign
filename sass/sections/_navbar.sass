@@ -1,0 +1,38 @@
+.nav-top
+    display: none
+.navbar
+    padding-top: 60px
+    padding-bottom: 60px
+    &-wrap
+        display: flex
+        justify-content: space-between  
+    &__logo
+        +reg_cond
+        font-size: 16px
+    &__link
+        +reg
+        font-size: 12px
+        text-transform: uppercase
+        color: $text-color
+        margin-left: 30px
+        transition-duration: 1s
+        &:hover
+            text-decoration: underline
+            transition-duration: 1s
+    &__phone
+        +reg
+        font-size: 14px
+        color: $text-color
+        margin-left: 60px
+        &:hover
+            text-decoration: underline
+            transition-duration: 1s
+.logo__link
+    color: $text-color
+@media (max-width: 768px)
+    .navbar
+        &__link
+            display: none
+@media (max-width: 480px)
+    .navbar
+        padding-bottom: 150px

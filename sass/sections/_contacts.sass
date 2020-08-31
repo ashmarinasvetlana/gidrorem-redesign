@@ -1,0 +1,46 @@
+.contacts
+    &__link
+        color: $text-color
+        +reg
+        text-decoration: none
+        transition-duration: 0.4s
+        font-size: 16px
+        &:hover
+            color: $active
+            transition-duration: 0.4s
+    &__image
+        margin-right: 15px
+    &__address
+        +reg
+    &__span
+        +reg
+        display: block
+        font-size: 16px
+        font-weight: 500
+        line-height: 160%
+        margin-top: 10px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &-block
+        display: flex
+        flex-direction: column
+        &__item
+            margin-bottom: 35px
+            display: flex
+            align-items: flex-start
+            margin-right: 25px
+.map
+    margin-top: -145px
+@media (max-width: 786px)
+    .map
+        display: none
+    .contacts-block
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        &__item
+            margin-bottom: 30px
+            
+    

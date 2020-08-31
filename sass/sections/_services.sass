@@ -1,0 +1,94 @@
+.services
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &-left
+        min-width: 440px
+        margin-right: 90px
+        display: flex
+        flex-direction: column
+        justify-content: center
+       
+        &__item
+            margin-bottom: 50px
+            min-width: 200px     
+    &-right
+        padding-top: 60px
+        &__item
+            margin-bottom: 50px
+            max-width: 250px
+    &__title
+        +h3
+        margin-bottom: 20px
+        &-light
+            color: $text-color-light
+    &__left
+        background-color: $text-color
+        padding: 70px 90px
+    &__right
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__text
+        margin-bottom: 10px
+        +text
+        font-weight: 300
+        line-height: 140%
+        
+    &__text-light
+        max-width: 225px
+        margin-bottom: 10px
+        display: block
+        +text-light
+        font-weight: 300
+        color: #DDDDDD
+@media (max-width: 768px)
+    .services
+        &__wrap
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__title
+            font-size: 20px
+        &-left
+            display: flex
+            flex-direction: row
+            justify-content: center
+            margin-right: 0px
+            &__item
+                min-width: 265px
+                margin-bottom: 0px
+        &-right
+            padding-left: 50px
+            flex-basis: 100%
+            margin: 0 auto
+            display: flex
+            flex-wrap: wrap
+            &__item
+                margin-right: 25px
+@media (max-width: 680px)
+    .services
+        &-right
+            &__item
+                max-width: 210px
+                margin-right: 20px
+        &-left
+            flex-direction: column
+            &__item
+                margin-bottom: 25px
+        &__title
+            font-size: 20px
+        &__text
+            font-size: 15px
+            margin-bottom: 5px
+@media (max-width: 480px)
+    .services
+        &-right
+            flex-direction: column
+            &__item
+                max-width: 100%
+                margin-bottom: 30px
+        &__title
+            margin-bottom: 15px
+
+            

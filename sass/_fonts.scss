@@ -1,0 +1,67 @@
+
+@mixin medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+@mixin reg {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin bold_cond {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+@mixin reg_cond {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@mixin h2 { 
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: bold;
+font-size: 75px;
+line-height: 110%;
+text-transform: uppercase;
+color: $text-color;
+}
+
+@mixin h3 { 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  color: $text-color;
+  }
+
+@mixin h3-light { 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2110%;
+  color: $text-color-light;
+    }
+
+@mixin text {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+color: $text-color_80;
+line-height: 140.4%;
+}
+
+@mixin text-light {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 140.4%;
+  color: $text-color-light;
+  }
+
+@media (max-width: 480px) {
+  @mixin text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: $text-color_80;
+    line-height: 140.4%;
+    }
+  
+}
+ 
+
