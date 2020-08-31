@@ -36,7 +36,6 @@ form
     height: 608px
     background: #242424
 .form
-    width: 100vw
     min-height: 990px
     background: url("../img/contacts/form_img.jpg") no-repeat center right
     display: flex
@@ -108,6 +107,8 @@ form
     .feedback
         width: 100vw
 @media (max-width: 480px)
+    form
+        padding: 16pxgi
     .section
         padding-top: 50px
         padding-bottom: 50px
@@ -117,6 +118,7 @@ form
     .form
         &__input
             font-size: 15px
+            max-width: 240px
         &__title
             font-size: 20px
 

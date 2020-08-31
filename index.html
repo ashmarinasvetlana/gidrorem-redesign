@@ -278,11 +278,24 @@
 <script src = "js/script.js"></script>
 <script src = "js/aos.js"></script>
 <script>
+
+	AOS.init({
+	  disable: function () {
+		var maxWidth = 768;
+		return window.innerWidth < maxWidth;
+	  }
+	});
+	
+	  </script>
+<script>
 	AOS.init(
 		{
-			once: 'true'
-		}
-	);
+			once: 'true',
+			disable: 'mobile'
+	
+		});
+
   </script>
+
 </body>
 </html>

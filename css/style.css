@@ -428,7 +428,6 @@ form {
 }
 
 .form {
-  width: 100vw;
   min-height: 990px;
   background: url("../img/contacts/form_img.jpg") no-repeat center right;
   display: flex;
@@ -522,6 +521,9 @@ form {
 }
 
 @media (max-width: 480px) {
+  form {
+    padding: 16pxgi;
+  }
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -532,6 +534,7 @@ form {
   }
   .form__input {
     font-size: 15px;
+    max-width: 240px;
   }
   .form__title {
     font-size: 20px;
@@ -800,9 +803,11 @@ form {
   }
   .services-left {
     flex-direction: column;
+    min-width: 100%;
   }
   .services-left__item {
     margin-bottom: 25px;
+    min-width: 100%;
   }
   .services__title {
     font-size: 20px;
@@ -1001,6 +1006,15 @@ form {
   }
   .features-block__text {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-block {
+    justify-content: center;
+  }
+  .features-block__item {
+    min-width: 200px;
   }
 }
 
