@@ -492,6 +492,11 @@ form {
   outline: none;
 }
 
+.form__input:active {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.84);
+}
+
 @media (max-width: 768px) {
   form {
     width: 100vw;
@@ -522,7 +527,7 @@ form {
 
 @media (max-width: 480px) {
   form {
-    padding: 16pxgi;
+    padding: 16px;
   }
   .section {
     padding-top: 50px;
