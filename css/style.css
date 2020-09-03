@@ -386,6 +386,22 @@ body {
   overflow-x: hidden;
 }
 
+.toTop {
+  cursor: pointer;
+  display: none;
+  background: url("../img/up-chevron.svg") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  padding: 5px;
+  color: #fff;
+  bottom: 50px;
+  right: 80px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+}
+
 .button {
   min-width: 159px;
   height: 39px;
