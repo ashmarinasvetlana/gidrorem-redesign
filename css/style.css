@@ -488,13 +488,9 @@ form {
 .form__input:focus {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
+  color: rgba(0, 0, 0, 0.84);
   border: none;
   outline: none;
-}
-
-.form__input:active {
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.84);
 }
 
 @media (max-width: 768px) {

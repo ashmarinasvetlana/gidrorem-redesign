@@ -30,11 +30,11 @@
 					<!-- /.logo navbar__logo -->
 					<div data-aos="fade-left" data-aos-duration="1700" class="navbar__mobile">
 					
-							<a href="" class="navbar__link">услуги</a>
-							<a href="" class="navbar__link">контакты</a>
-							<a href="" class="navbar__link">консультация</a>
+							<a href="#services" class="navbar__link">услуги</a>
+							<a href="#contacts" class="navbar__link">контакты</a>
+							<a href="#feedback" class="navbar__link">консультация</a>
 					
-						<a class = "navbar__phone" href="tel:+7(903)0024669">+7 (903) 002-46-69</a>
+						<a class = "navbar__phone"  href="tel:+7(903)0024669" onclick="ym(57089281,'reachGoal','call');return true;">+7 (903) 002-46-69</a>
 					
 					</div>
 				
@@ -42,21 +42,7 @@
 				
 				
 				</div>
-				<nav class="nav-top">
 
-					<a href="#menu" class="menu-link">
-<span class = "service-hover"></span>
-</a>
-					<div class="menu">
-						<ul>
-							<li><a class="menu-a" href="#home">Главная</a></li>
-							<li><a class="menu-a" href="#services">Услуги</a></li>
-							<li><a class="menu-a" href="#projects-section">Проекты</a></li>
-							<li><a class="menu-a" href="#advantages">Наши преимущества</a></li>
-							<li><a class="menu-a" href="#contacts">Контакты</a></li>
-						</ul>
-					</div>
-				</nav>
 			</div>
 			<!-- /.container -->
 		</div>
@@ -68,7 +54,7 @@
 							<h1 class="hero__title">Ремонт <br> гидравлики</h1>
 							<p class="hero__subtitle">электроники управления <br>
 								и промышленного оборудования</p>
-							<a href="#about" class="button">Услуги</a>
+							<a href="#services" class="button">Услуги</a>
 							<p class="hero__services">диагностика / ремонт / разработка / настройка</p>
 					</div>
 		
@@ -193,10 +179,10 @@
 			
 						</div>
 					</section>
-			<div class="feedback">
+			<div class="feedback" id="feedback">
 				<div class="container">
 					<div  class="form">
-						<form data-aos="fade-right" data-aos-duration="1700" action="mail.php">
+						<form data-aos="fade-right" data-aos-duration="1700" action="mail.php" onsubmit="ym(57089281,'reachGoal','form');return true;">
 							<h3 class="form__title">Обратная связь</h3>
 							<input type="text" name = "user_name" class = "form__input" placeholder = "имя" required>
 							<input type="tel" name = "user_phone" class = "form__input" placeholder = "номер телефона" required>
@@ -249,7 +235,7 @@
 							
 							</div>
 							<div data-aos="fade-left" data-aos-duration="1700" class="map">
-								<img src="img/contacts/map.png" alt="">
+								<img src="img/contacts/map.png" alt="Сергиев Посад, Московская область">
 							</div>
 						</div>
 					
