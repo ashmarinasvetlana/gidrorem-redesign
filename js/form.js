@@ -31,7 +31,7 @@ var forms = document.querySelectorAll("form"),
 for (var tempMessages = [], message = {
         loading: "Идет отправка данных...",
         success: "<span style='color: #089B4C;'>Отправлено</span>",
-        failure: "<span style='color: red;'>Ошибка передачи данных!<br>Попробуйте еще раз!</span>"
+        failure: "<span style='color: red;'>Ошибка!</span>"
     }, i = forms.length; i--;) forms[i].addEventListener("submit", function (e) {
     sendForm(e)
 });
