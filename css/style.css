@@ -686,8 +686,7 @@ form {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
-    margin-top: 0px;
+    margin-top: 32px;
     background: url(../img/main_bg.jpg) no-repeat right top 196px;
     background-size: 50%;
   }
@@ -715,20 +714,24 @@ form {
 }
 
 .services-left {
-  min-width: 440px;
-  margin-right: 90px;
+  min-width: 380px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  height: fit-content;
 }
 
 .services-left__item {
-  margin-bottom: 50px;
   min-width: 200px;
 }
 
+.services-left__item:first-child {
+  margin-bottom: 50px;
+}
+
 .services-right {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .services-right__item {
@@ -739,7 +742,7 @@ form {
 .services__title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 110%;
   color: rgba(0, 0, 0, 0.84);
   margin-bottom: 20px;
@@ -757,7 +760,7 @@ form {
 .services__right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .services__text {
@@ -782,14 +785,9 @@ form {
   color: #DDDDDD;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .services__wrap {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .services__title {
-    font-size: 20px;
   }
   .services-left {
     display: flex;
@@ -801,12 +799,11 @@ form {
     min-width: 265px;
     margin-bottom: 0px;
   }
+  .services-left__item:first-child {
+    margin-bottom: 0px;
+  }
   .services-right {
     padding-left: 50px;
-    flex-basis: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
   }
   .services-right__item {
     margin-right: 25px;
@@ -825,6 +822,9 @@ form {
   .services-left__item {
     margin-bottom: 25px;
     min-width: 100%;
+  }
+  .services-left__item:first-child {
+    margin-bottom: 50px;
   }
   .services__title {
     font-size: 20px;
@@ -992,7 +992,7 @@ form {
   font-weight: 300;
   font-size: 44px;
   margin-right: 10px;
-  line-height: 100%;
+  line-height: 110%;
 }
 
 @media (max-width: 768px) {
@@ -1010,7 +1010,6 @@ form {
 
 @media (max-width: 610px) {
   .features {
-    padding-top: 0px;
     background: #EDEDED;
   }
   .features-block {
@@ -1032,6 +1031,9 @@ form {
   }
   .features-block__item {
     min-width: 200px;
+  }
+  .features-block__number {
+    line-height: 120%;
   }
 }
 

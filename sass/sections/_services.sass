@@ -3,17 +3,18 @@
         display: flex
         justify-content: space-between
     &-left
-        min-width: 440px
-        margin-right: 90px
+        min-width: 380px
+        margin-right: 30px
         display: flex
         flex-direction: column
-        justify-content: center
-       
+        justify-content: space-around
+        height: fit-content
         &__item
-            margin-bottom: 50px
-            min-width: 200px     
+            min-width: 200px
+            &:first-child
+                margin-bottom: 50px 
     &-right
-        padding-top: 60px
+        padding-top: 50px
         &__item
             margin-bottom: 50px
             max-width: 250px
@@ -28,7 +29,7 @@
     &__right
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: space-around
     &__text
         margin-bottom: 10px
         +text
@@ -42,14 +43,10 @@
         +text-light
         font-weight: 300
         color: #DDDDDD
-@media (max-width: 768px)
+@media (max-width: 990px)
     .services
         &__wrap
             flex-direction: column
-            justify-content: center
-            align-items: center
-        &__title
-            font-size: 20px
         &-left
             display: flex
             flex-direction: row
@@ -58,14 +55,13 @@
             &__item
                 min-width: 265px
                 margin-bottom: 0px
+                &:first-child
+                    margin-bottom: 0px
         &-right
             padding-left: 50px
-            flex-basis: 100%
-            margin: 0 auto
-            display: flex
-            flex-wrap: wrap
             &__item
                 margin-right: 25px
+  
 @media (max-width: 680px)
     .services
         &-right
@@ -78,6 +74,8 @@
             &__item
                 margin-bottom: 25px
                 min-width: 100%
+                &:first-child
+                    margin-bottom: 50px
         &__title
             font-size: 20px
         &__text
