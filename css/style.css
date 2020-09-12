@@ -574,7 +574,7 @@ form {
     justify-content: center;
   }
   .section {
-    padding-bottom: 120px;
+    margin-bottom: 120px;
   }
   .section__title {
     text-align: center;
@@ -1173,6 +1173,12 @@ form {
 
 .map {
   margin-top: -145px;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    width: 50%;
+  }
 }
 
 @media (max-width: 786px) {
