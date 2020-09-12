@@ -40,11 +40,12 @@ body
         color: $text-color-light
         transition-duration: 1s
 .section
-    padding-top: 80px
-    padding-bottom: 80px
+    margin-bottom: 160px
     &__title
         +h2
         margin-bottom: 70px
+.feedback
+    margin-bottom: 160px
 form
     width: 460px
     padding: 70px
@@ -63,7 +64,7 @@ form
         font-size: 24px
         color: $text-color-light
         text-align: center
-        margin-bottom: 60px
+        margin-bottom: 50px
     &__btn
         width: 190px
         height: 45px
@@ -92,10 +93,12 @@ form
         width: 300px
         height: 50px
         padding: 15px 20px
-        margin-bottom: 50px
+        margin-bottom: 40px
         background-color: transparent
         color: $text-color-light
         border: 0.5px solid rgba(255, 255, 255, 0.5)
+        &:last-child
+            margin-bottom: 15px
         &:focus
             +reg
             background-color: #fff
@@ -117,7 +120,28 @@ form
     height: 5px
     background: $text-color_80
     width: 0%
-
+.politics
+    display: flex
+    justify-content: center
+    margin-bottom: 40px
+    margin-top: -20px
+.checkbox
+    &__text
+        
+        display: block
+        margin-left: 10px
+        +text
+        font-size: 12px
+        color: $text-color-light
+    &__link
+        text-decoration: none
+        +reg
+        font-size: 12px
+        color: $text-color-light
+.politics__checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
 @media (max-width: 768px)
     form
         width: 100vw
@@ -126,12 +150,13 @@ form
         align-content: center
         justify-content: center
     .section
-        padding-top: 60px
-        padding-bottom: 60px
+        padding-bottom: 120px
         &__title
             text-align: center
             font-size: 40px
             margin-bottom: 40px
+    .feedback
+        margin-bottom: 120px
     .form
         background-image: none
         background-size: 100%
@@ -139,15 +164,19 @@ form
         justify-content: center
     .feedback
         width: 100vw
+.checkbox
+    &__text
+        border-bottom: 30px
 @media (max-width: 480px)
     form
         padding: 16px
     .section
-        padding-top: 50px
-        padding-bottom: 50px
+        margin-bottom: 100px
         &__title
             font-size: 25px
             margin-bottom: 35px
+        .feedback
+            margin-bottom: 100px
     .form
         &__input
             font-size: 15px

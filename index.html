@@ -13,6 +13,8 @@
 	<link rel="icon" type="image/x-icon" href="https://remontgidravliki.ru/favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick/slick.css">
+	<link rel="stylesheet" href="slick/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animation.css">
@@ -183,6 +185,26 @@
 			
 						</div>
 					</section>
+					<section class="work" id="work">
+						<div class="container">
+							<h2 class="section-title section__title">
+								Уже отремонтировано
+							</h2>
+							<div class="work__slider">
+								<div class="work__slider-item"><img src="img/slider/1.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/2.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/3.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/4.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/5.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/6.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/7.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/8.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/9.jpg" alt=""></div>
+								<div class="work__slider-item"><img src="img/slider/10.jpg" alt=""></div>
+					
+							  </div>
+						</div>
+					</section>
 			<div class="feedback" id="feedback">
 				<div class="container">
 					<div  class="form">
@@ -191,6 +213,10 @@
 							<input type="text" name = "user_name" class = "form__input" placeholder = "имя" required>
 							<input type="tel" name = "user_phone" class = "form__input" placeholder = "номер телефона" required>
 							<input type="email" name = "user_email" class = "form__input" placeholder = "e-mail">
+							<div class="politics"><input checked type="checkbox" class="politics__checkbox" id="yes" name="yes">
+								<label for="yes"></label>
+								<span class="checkbox__text">Нажимая на кнопку "Отправить", я даю  <a class = "checkbox__link" target = "blank" href="politica.html">согласие <br> на обработку персональных данных</a></span></div>
+							
 							<button class="button form__btn">Отправить</button>
 						</form>
 
@@ -265,6 +291,7 @@
 			</footer>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src = "js/jquery.maskedinput.min.js"></script>
+<script src = "slick/slick/slick.min.js"></script>
 <script src = "js/script.js"></script>
 <script src = "js/aos.js"></script>
 <script src = "js/form.js"></script>
@@ -286,6 +313,49 @@
 	
 		});
 
+  </script>
+  <script>
+$('.work__slider').slick({
+centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  variableWidth: true,
+  adaptiveHeight: true,
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+		
   </script>
 
 </body>
