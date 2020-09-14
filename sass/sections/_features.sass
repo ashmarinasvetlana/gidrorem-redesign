@@ -1,13 +1,14 @@
 .features
-    background: url("../img/features/features_img.jpg") no-repeat center right 25%
-    background-size: 43%
-    -webkit-animation: feature 0.8s linear 
+    background: url("../img/features/feature.jpg") no-repeat bottom right 25%
+    background-size: 50%
+    -webkit-animation: feature 0.8s linear
+    min-height: 60vh
     &__block
     &-block
         &__item
             display: flex
             align-items: flex-start
-            margin-bottom: 30px
+            margin-bottom: 40px
         &__text
             +text
             max-width: 160px
@@ -20,15 +21,21 @@
             font-size: 44px
             margin-right: 10px
             line-height: 110%
+@media (max-width: 990px)
+    .features
+        background: url("../img/features/feature.jpg") no-repeat bottom right 
+        background-size: 60%
+        &-block
+            &__item
+                margin-bottom: 30px
 @media (max-width: 768px)
     .features
-        background: url("../img/features/features_img_mob.jpg") no-repeat top right 25%
-        background-size: 43%
-@media (max-width: 680px)
-    .features
+        background: url("../img/features/features_img_mob.jpg") no-repeat bottom right 15%
         background-size: 40%
+
 @media (max-width: 610px)
     .features
+        min-height: 200px
         background: #EDEDED
         &-block
             display: flex

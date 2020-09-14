@@ -18,12 +18,11 @@ body
     height: 30px
     position: fixed
     padding: 5px
-    color: #fff
-    position:fixed
+    color: black
+    position: fixed
     bottom: 50px
-    right: 80px
+    right: 50px
     +reg
-    font-size: 40px
 .button
     min-width: 159px
     height: 39px
@@ -43,7 +42,7 @@ body
     margin-bottom: 160px
     &__title
         +h2
-        margin-bottom: 70px
+        margin-bottom: 80px
 .feedback
     margin-bottom: 160px
 form
@@ -142,7 +141,22 @@ form
     position: absolute
     z-index: -1
     opacity: 0
+@media ( max-width:  1420px)
+    .toTop
+        display: none
+        background: url("../img/up-arrow.svg") no-repeat center
+        background-size: contain
+        width: 30px
+        height: 30px
+        position: fixed
+        padding: 5px
+        color: black
+        position: fixed
+        bottom: 160px
+        right: 100px
 @media (max-width: 768px)
+    .toTop
+        right: 16px
     form
         width: 100vw
         display: flex
