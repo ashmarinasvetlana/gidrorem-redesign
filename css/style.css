@@ -699,6 +699,9 @@ form {
   .navbar__link {
     display: none;
   }
+  .navbar__phone {
+    font-size: 15px;
+  }
 }
 
 .hero {
@@ -923,7 +926,7 @@ form {
     font-size: 20px;
   }
   .services__text {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
 }
@@ -1030,10 +1033,10 @@ form {
 @media (max-width: 480px) {
   .about-block__text {
     max-width: 350px;
-    font-size: 15px;
+    font-size: 16px;
   }
   .about-block__year {
-    font-size: 15px;
+    font-size: 16px;
   }
   .about-block__numbers {
     margin-top: 25px;
@@ -1142,7 +1145,7 @@ form {
     font-size: 25px;
   }
   .features-block__text {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -1252,7 +1255,7 @@ form {
 }
 
 .footer-block {
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.84);
   display: flex;
   justify-content: space-between;
